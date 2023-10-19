@@ -1,0 +1,52 @@
+@font-face {
+    font-family: 'JuegoDeTronos';
+    src: url("../../assets/fonts/GameofThrones.ttf")
+}
+
+/* IMAGEN FONDO DEL HOME (NO TOQUES PLS) */
+
+.home{
+    background-image: url(../../assets/images/fondoGOT.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+}
+
+.menuidiomas {
+    height: 20vh;
+    width: 100vw;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+}
+
+.bandera {
+    width: 64px;
+    height: 45px;
+    margin: 40px 30px;
+    
+}
+
+.hometitulo{
+    font-size: 250px;
+    height: 60vh;
+    width: 100vw;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-family: "JuegoDeTronos";
+    font-weight: normal;
+}
+
+.homebotones {
+    height: 20vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-family: "JuegoDeTronos";
+    font-weight: normal;
+}
