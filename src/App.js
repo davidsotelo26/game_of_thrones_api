@@ -1,24 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
+import CronologyPage from './pages/CronologyPage.jsx/CronologyPage';
+import HousesPage from './pages/HousesPage/HousesPage';
+import CharactersPage from './pages/CharactersPage/CharactersPage';
+import HomePage from './pages/HomePage/HomePage';
+import "./style.css";
+import CharacterInfoPage from './pages/infopages/CharacterInfoPage/CharacterInfoPage';
+import HousesInfoPage from './pages/infopages/HousesInfoPage/HousesInfoPage';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div className = "estilo-main">
+        <Routes>
+          <Route path="" element={<HomePage/>}/>
+          <Route path="characters" element={<CharactersPage/>}/>
+          <Route path="characters/:id" element={<CharacterInfoPage/>}/>
+          <Route path="houses" element={<HousesPage/>}/>
+          <Route path="houses/:id" element={<HousesInfoPage/>}/>
+          <Route path="cronology" element={<CronologyPage/>}/>
+        </Routes>
+      </div>
+    </Router>
   );
 }
 
