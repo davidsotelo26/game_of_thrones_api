@@ -14,8 +14,8 @@ return <section className="FichaPersonaje">
         </div>
 
         <div className="botonbanderas">
-        <img className="bandera" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Bandera_Nacional_de_Espa%C3%B1a_sin_escudo.png/1200px-Bandera_Nacional_de_Espa%C3%B1a_sin_escudo.png" alt="spainflag" />
-        <img className="bandera" src="https://www.countryflags.com/wp-content/uploads/united-kingdom-flag-png-xl.png" alt="ukflag" />
+        <img className="bandera" src="https://res.cloudinary.com/dvmkyxyc0/image/upload/v1697833408/spain_1_pmsxsq.png" alt="spainflag" />
+        <img className="bandera" src="https://res.cloudinary.com/dvmkyxyc0/image/upload/v1697833408/united-kingdom_1_hyhwxc.png" alt="ukflag" />
         </div>
 </div>
 
