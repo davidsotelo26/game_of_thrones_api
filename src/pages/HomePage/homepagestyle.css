@@ -23,13 +23,13 @@
 
 .bandera {
     width: 64px;
-    height: 45px;
+    height: 64px;
     margin: 40px 30px;
     
 }
 
 .hometitulo{
-    font-size: 250px;
+    font-size: 10rem;
     height: 60vh;
     width: 100vw;
     display: flex;
