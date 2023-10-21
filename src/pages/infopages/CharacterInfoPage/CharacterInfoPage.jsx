@@ -7,8 +7,8 @@ return <section className="FichaPersonaje">
 <div className="HeaderMenu">
 
         <div className="botonvolver">
-        <Link className="linkvolver"to="characters">
-            <img className="flechavolver"src="https://cdn.zeplin.io/5e1c73baff24c3be01ba9cca/assets/e042365d-a1dc-4fef-ab6c-245a7c85f922.svg" alt="" />
+        <Link className="linkvolver" to="/characters">
+            <img className="flechavolver" src="https://cdn.zeplin.io/5e1c73baff24c3be01ba9cca/assets/e042365d-a1dc-4fef-ab6c-245a7c85f922.svg" alt="" />
             <p className="textovolver">VOLVER</p>
         </Link>
         </div>
