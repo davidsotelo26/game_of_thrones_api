@@ -2,7 +2,12 @@
 width: 100vw;
 display: flex;
 justify-content: space-around;
-    flex-wrap: wrap;
+height: 10vh;
+align-items: center;
+bottom: 0px;
+font-family: "JuegoDeTronos";
+font-weight: normal;
+position: fixed;
 }
 
 .boton {
