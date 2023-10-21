@@ -1,0 +1,99 @@
+.FichaPersonaje {
+    background-color: black;
+}
+
+.HeaderMenu {
+    height: 10vh;
+    width: 100vw;
+    display: flex;
+}
+.botonbanderas {
+    width: 50vw;
+    height: 10vh;
+}
+
+.botonvolver {
+    width: 50vw;
+    height: 10vh;
+}
+
+.linkvolver {
+    width: 10vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-decoration: none;
+    color:white;
+    margin-left: 30px;
+}
+
+.flechavolver {
+    width: 64px;
+    height: 32px;
+}
+
+.textovolver {
+    width: 128px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    
+}
+
+.botonbanderas {
+    height: 20vh;
+    width: 100vw;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+}
+
+.bandera {
+    width: 64px;
+    height: 64px;
+    margin: 40px 30px;
+}
+
+.descripcionGeneral {
+    height: 45vh;
+    width: 100vw;
+}
+
+.InfoNombre{
+    font-family: "JuegoDeTronos";
+    font-weight: lighter;
+    font-size: 50px;
+}
+
+.descripcionEspecifica {
+    height: 45vh;
+    width: 100vw;
+    display: flex;
+    font-family: "JuegoDeTronos";
+    font-weight:lighter;
+}
+
+.InfoCasa{
+    width: 20vw;
+    height: 45vh;
+}
+.InfoAlianza{
+    width: 15vw;
+    height: 45vh;
+}
+.InfoApariciones{
+    width: 15vw;
+    height: 45vh;
+}
+.InfoPadre{
+    width: 15vw;
+    height: 45vh;
+}
+.InfoDescendiente{
+    width: 15vw;
+    height: 45vh;
+}
+.InfoTitulos{
+    width: 15vw;
+    height: 45vh;
+}
