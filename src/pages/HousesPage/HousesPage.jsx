@@ -1,3 +1,2 @@
 // import
-
-export default function HousesPage () {}
+export default function HousesPage(){}
