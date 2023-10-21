@@ -6,6 +6,7 @@ import HomePage from './pages/HomePage/HomePage';
 import "./style.css";
 import CharacterInfoPage from './pages/infopages/CharacterInfoPage/CharacterInfoPage';
 import HousesInfoPage from './pages/infopages/HousesInfoPage/HousesInfoPage';
+import { withTranslation } from 'react-i18next';
 
 function App() {
   return (
@@ -24,4 +25,4 @@ function App() {
   );
 }
 
-export default App;
+export default withTranslation()(App);

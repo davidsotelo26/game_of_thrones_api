@@ -70,3 +70,28 @@ body{
     width: 267px;
     height: 320px;
 }
+
+h3{
+    font-family: 'JuegoDeTronos';
+}
+
+h4{
+    font-family: 'JuegoDeTronos';
+}
+
+.houseName{
+    font-size: 2.25rem;
+}
+
+.main{
+   width: 100vw; 
+   height: 38vh;
+}
+
+.footer{
+    width: 100vw;
+    height: 50vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
