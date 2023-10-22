@@ -5,9 +5,10 @@ import "./HousePage.css"
 import SearchBar from "../../components/SearchBar/SearchBar";
 import React from "react";
 import MenuInicio from "../../components/MenuInicio/MenuInicio";
-// import MenuIdiomas from "../../components/MenuIdiomas copy/MenuIdiomas";
 import SimpleBar from 'simplebar-react';
 import 'simplebar-react/dist/simplebar.min.css';
+import MenuIdiomas from "../../components/MenuIdiomas/MenuIdiomas";
+
 
 export default function HousesPage () {
 
@@ -33,16 +34,16 @@ return (
     <body className="body">
         <nav className="navbar">
             <SearchBar onSearch={handleSearch}/>
-            {/* <MenuIdiomas/> */}
+            <MenuIdiomas/>
         </nav>
+        <div className="cuerpo">
         <div className="scrollable-container">
             <HouseGallery data={housesFilter}/>
         </div>
-        <footer className="footer">
-            <div className="homebotones">
+        </div>
+        
                 <MenuInicio/>
-            </div>
-        </footer>
+        
     </body>
 )
 }

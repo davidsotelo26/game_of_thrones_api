@@ -6,7 +6,7 @@
 /* IMAGEN FONDO DEL HOME (NO TOQUES PLS) */
 
 .home{
-    background-image: url(../../assets/images/fondoGOT.svg);
+    background-image: url('https://res.cloudinary.com/dvmkyxyc0/image/upload/v1697927740/image_1_jijkwe.png');
     background-repeat: no-repeat;
     background-size: cover;
     width: 100vw;
@@ -17,7 +17,7 @@
     height: 20vh;
     width: 100vw;
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     justify-content: flex-end;
 }
 
@@ -27,25 +27,26 @@
     margin: 40px 30px;
 }
 
+.holita{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .hometitulo{
-    font-size: 10rem;
-    height: 60vh;
-    width: 100vw;
+    
+    height: 75vh;
+    width: 60vw;
     display: flex;
     align-items: flex-start;
     justify-content: center;
     flex-wrap: wrap;
+    align-items: center;
+}
+
+.hometitle{
+    font-size: 7vw; 
     font-family: "JuegoDeTronos";
     font-weight: normal;
 }
 
-.homebotones {
-    height: 20vh;
-    width: 100vw;
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    justify-content: center;
-    font-family: "JuegoDeTronos";
-    font-weight: normal;
-}
