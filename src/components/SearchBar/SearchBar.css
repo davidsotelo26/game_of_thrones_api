@@ -1,4 +1,4 @@
-.lupaybuscador{
+.lupitaybuscador{
     display: flex;
     flex-wrap: wrap;
     align-items: last baseline;
@@ -6,6 +6,7 @@
     border-bottom-color: white;
     border-bottom-style: solid ;
     height: 8vh;
+    margin-left: 10vw;
 }
 
 .buscador{

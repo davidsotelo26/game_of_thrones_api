@@ -35,7 +35,7 @@ return (
             <SearchBar onSearch={handleSearch}/>
             <MenuIdiomas/>
         </nav>
-        <div className="cuerpo">
+        <div className="cuerpito">
         <div className="scrollable-container">
             <HouseGallery data={housesFilter}/>
         </div>
