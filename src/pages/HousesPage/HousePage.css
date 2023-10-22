@@ -1,0 +1,65 @@
+.body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.scrollable-container{
+    max-height: 650px;
+    overflow: auto;
+    
+}
+.navbar{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: space-around;
+}
+.lupaybuscador{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    border-bottom: 10px;
+    border-bottom-color: white;
+}
+.houses-gallery{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+.houselogo{
+    width: 248px;
+    height: 297px;
+    margin: 0 24px 0 20 px;
+}
+.housename{
+
+}
+.lupa{
+    width: 21px;
+    height: 21px;
+}
+.buscador{
+width: 755px;
+height: 32px;
+margin: 19px 366px 2px 12px;
+font-family: Lato;
+font-size: 24px;
+font-weight: normal;
+font-stretch: normal;
+font-style: normal;
+line-height: normal;
+letter-spacing: normal;
+color: #ffffff;
+background-color: black;
+border-top: none;
+border-left: none;
+border-right: none;
+border-bottom: 10px, white;
+}
+.footer{
+    
+}
