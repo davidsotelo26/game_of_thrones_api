@@ -8,9 +8,14 @@ bottom: 0px;
 font-family: "JuegoDeTronos";
 font-weight: normal;
 position: fixed;
+
 }
 
 .boton {
 text-decoration: none;
 color: white;
+}
+
+.active{
+text-decoration: underline;
 }
