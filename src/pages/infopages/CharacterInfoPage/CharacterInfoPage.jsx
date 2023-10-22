@@ -1,7 +1,19 @@
 import "./CharacterInfoPageStyle.css"
 import { Link } from 'react-router-dom';
+import axios from "axios";
+import React from "react";
+
+const URL = "http://localhost:3000/characters";
 
 export default function CharacterInfoPage () {
+const [post, setPost] = React.useState();
+
+  React.useEffect(() => {
+    axios.get(`${URL}/1`).then((response) => {
+      console.log(response);
+    });
+  }, []);
+
 
 return <section className="FichaPersonaje">
 <div className="HeaderMenu">
@@ -47,7 +59,15 @@ return <section className="FichaPersonaje">
     </div>
     <div className="InfoApariciones">
     <h3>APARICIONES</h3>
-        <ul>
+        <ul className="InfoAparicionesScroll">
+            <p>blablabla</p>
+            <p>blablabla</p>
+            <p>blablabla</p>
+            <p>blablabla</p>
+            <p>blablabla</p>
+            <p>blablabla</p>
+            <p>blablabla</p>
+            <p>blablabla</p>
             <p>blablabla</p>
             <p>blablabla</p>
             <p>blablabla</p>
@@ -71,7 +91,19 @@ return <section className="FichaPersonaje">
     </div>
     <div className="InfoTitulos">
         <h3>TITULOS</h3>
-            <ul>
+            <ul className="InfoTitulosScroll">
+            <p>blablabla</p>
+            <p>blablabla</p>
+            <p>blablabla</p>
+            <p>blablabla</p>
+            <p>blablabla</p>
+            <p>blablabla</p>
+            <p>blablabla</p>
+            <p>blablabla</p>
+            <p>blablabla</p>
+            <p>blablabla</p>
+            <p>blablabla</p>
+            <p>blablabla</p>
             <p>blablabla</p>
             <p>blablabla</p>
             <p>blablabla</p>

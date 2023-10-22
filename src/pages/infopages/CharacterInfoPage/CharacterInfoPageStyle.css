@@ -75,25 +75,38 @@
 
 .InfoCasa{
     width: 20vw;
-    height: 45vh;
+    height: 35vh;
 }
 .InfoAlianza{
     width: 15vw;
-    height: 45vh;
+    height: 35vh;
 }
 .InfoApariciones{
     width: 15vw;
-    height: 45vh;
+    height: 25vh;
+}
+
+.InfoAparicionesScroll{
+    overflow: auto;
+    width: 15vw;
+    height: 25vh;
 }
 .InfoPadre{
     width: 15vw;
-    height: 45vh;
+    height: 35vh;
 }
 .InfoDescendiente{
     width: 15vw;
-    height: 45vh;
+    height: 35vh;
 }
 .InfoTitulos{
     width: 15vw;
-    height: 45vh;
+    height: 30vh;
+}
+
+
+.InfoTitulosScroll{
+    overflow: auto;
+    width: 15vw;
+    height: 25vh;
 }
