@@ -1,83 +1,105 @@
 import "./CharacterInfoPageStyle.css"
-import { Link } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
+import MenuIdiomas from "../../../components/MenuIdiomas/MenuIdiomas";
+import { withTranslation } from 'react-i18next';
+import { useEffect, useState } from "react";
+import axios from "axios";
 
-export default function CharacterInfoPage () {
+function CharacterInfoPage ({t}) {
+    
+    const {id} = useParams();
+    const [itemData, setItemData] = useState({});
+    const [house, setHouse] = useState({});
+    useEffect(() => {
+        const fetchData = async () => {
+            const antonio = await axios.get(`http://localhost:3000/characters/${id}`);
+            setItemData(antonio.data);
+
+            const houseInfo = await axios.get(`http://localhost:3000/houses`);
+        const matchingHouse = houseInfo.data.find(h => h.name === antonio.data.house);
+        setHouse(matchingHouse);
+        };
+      
+        fetchData();
+  
+      }, [id]);
+
+      const renderListItems = (list) => {
+        if (Array.isArray(list) && list.length > 0) {
+        
+            return list.map((item, index) => 
+        <li key={index}>{item}
+        </li>)
+        
+        } else{
+            return <li>No data available</li>
+        }
+      };
+
+
 
 return <section className="FichaPersonaje">
-<div className="HeaderMenu">
-
-        <div className="botonvolver">
-        <Link className="linkvolver"to="characters">
-            <img className="flechavolver"src="https://cdn.zeplin.io/5e1c73baff24c3be01ba9cca/assets/e042365d-a1dc-4fef-ab6c-245a7c85f922.svg" alt="" />
-            <p className="textovolver">VOLVER</p>
-        </Link>
+<div className='header'>
+        <div className='volver'>
+            <Link to='/characters' className='volveruwu'>
+            <img className='flechita' src='https://res.cloudinary.com/dvmkyxyc0/image/upload/v1697845997/Vector_jvcokm.png' alt='flechita'></img>
+            <p>{t('volver')}</p>
+            </Link>
         </div>
-
-        <div className="botonbanderas">
-        <img className="bandera" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Bandera_Nacional_de_Espa%C3%B1a_sin_escudo.png/1200px-Bandera_Nacional_de_Espa%C3%B1a_sin_escudo.png" alt="spainflag" />
-        <img className="bandera" src="https://www.countryflags.com/wp-content/uploads/united-kingdom-flag-png-xl.png" alt="ukflag" />
-        </div>
-</div>
+        <MenuIdiomas/>
+       </div>
 
 <div className="descripcionGeneral">
 <div className="InfoGeneral">
     <div className="Infofoto">
-        <img height={"320px"} src="https://media.vogue.es/photos/5cc6ff2bfdc82266ff1f2401/2:3/w_2560%2Cc_limit/series_2019_netflix_hbo_juego_de_tronos_modern_family_stranger_things_638146771.jpg" alt="ChatacterPhoto" />
+        <img className="fotito" src={`http://localhost:3000/${itemData.image}`} alt="portrait"/>
     </div>
 
     <div className="InfoNombre">
-<h1>JUANA LA LOCA</h1>
+<h1 className="nombre">{itemData.name}</h1>
     </div>
 </div>
 
 </div>
 <div className="descripcionEspecifica">
-    <div className="InfoCasa">
-    <h3>CASA</h3>
-    <img height="300px"src="https://i.pinimg.com/originals/3b/a6/c6/3ba6c62072b44f68baaca0faff4d2782.png" alt="" />
+    
+    <div className="InfoA">
+    <h3>{t('casa')}</h3>
+    <img height="191.6px" width='160px' src={`http://localhost:3000/${house.image}`} alt="casa" />
     </div>
-    <div className="InfoAlianza">
-    <h3>ALIANZAS</h3>
+    
+    <div className="InfoA">
+    <h3>{t('alianzas')}</h3>
     <ul>
-        <p>blablabla</p>
-        <p>blablabla</p>
-        <p>blablabla</p>
-        <p>blablabla</p>
+    {renderListItems(itemData.alliances)}
     </ul>
     </div>
-    <div className="InfoApariciones">
-    <h3>APARICIONES</h3>
+    <div className="InfoA">
+    <h3>{t('apariciones')}</h3>
         <ul>
-            <p>blablabla</p>
-            <p>blablabla</p>
-            <p>blablabla</p>
-            <p>blablabla</p>
+        {renderListItems(itemData.episodes)}
         </ul>
     </div>
-    <div className="InfoPadre">
-        <h3>PADRE</h3>
+    <div className="InfoA">
+        <h3>{t('padres')}</h3>
         <ul>
-            <p>blablabla</p>
+            {renderListItems(itemData.parents)}
         </ul>
     </div>
-    <div className="InfoDescendiente">
-        <h3>DESCENDIENTES</h3>
+    <div className="InfoA">
+        <h3>{t('hermanos')}</h3>
             <ul>
-                <p>blablabla</p>
-                <p>blablabla</p>
-                <p>blablabla</p>
-                <p>blablabla</p>
+            {renderListItems(itemData.siblings)}
             </ul>
     </div>
-    <div className="InfoTitulos">
-        <h3>TITULOS</h3>
+    <div className="InfoA">
+        <h3>{t('titulos')}</h3>
             <ul>
-            <p>blablabla</p>
-            <p>blablabla</p>
-            <p>blablabla</p>
-            <p>blablabla</p>
+            {renderListItems(itemData.titles)}
             </ul>
     </div>
 </div>
 </section>
 }
+
+export default withTranslation()(CharacterInfoPage);

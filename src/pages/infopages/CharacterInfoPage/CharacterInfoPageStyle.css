@@ -1,57 +1,11 @@
+*{
+    text-decoration: none;
+    list-style: none;
+}
+
 .FichaPersonaje {
     background-color: black;
-}
-
-.HeaderMenu {
-    height: 10vh;
-    width: 100vw;
-    display: flex;
-}
-.botonbanderas {
-    width: 50vw;
-    height: 10vh;
-}
-
-.botonvolver {
-    width: 50vw;
-    height: 10vh;
-}
-
-.linkvolver {
-    width: 10vw;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    text-decoration: none;
-    color:white;
-    margin-left: 30px;
-}
-
-.flechavolver {
-    width: 64px;
-    height: 32px;
-}
-
-.textovolver {
-    width: 128px;
-    height: 32px;
-    display: flex;
-    align-items: center;
-    
-}
-
-.botonbanderas {
-    height: 20vh;
-    width: 100vw;
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-end;
-}
-
-.bandera {
-    width: 64px;
-    height: 45px;
-    margin: 40px 30px;
+    height: 100vh;
 }
 
 .descripcionGeneral {
@@ -66,34 +20,52 @@
 }
 
 .descripcionEspecifica {
-    height: 45vh;
+    height: 40vh;
     width: 100vw;
     display: flex;
-    font-family: "JuegoDeTronos";
-    font-weight:lighter;
+    flex-direction: row;
+    justify-content: space-around;
 }
 
-.InfoCasa{
-    width: 20vw;
-    height: 45vh;
+.nombre{
+    font-size: 2vw;
+    font-weight: lighter;
 }
-.InfoAlianza{
-    width: 15vw;
-    height: 45vh;
+.InfoA{
+    
+    height: 40vh;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
 }
-.InfoApariciones{
-    width: 15vw;
-    height: 45vh;
+
+h3{
+    font-size: 1vw;
+    font-weight: lighter;
+    font-family: "JuegoDeTronos";
 }
-.InfoPadre{
-    width: 15vw;
-    height: 45vh;
+
+p{
+    font-size: 1vw;
 }
-.InfoDescendiente{
-    width: 15vw;
-    height: 45vh;
+
+ul {
+    
+    font-size: 1vw;
+    display: flex;
+    flex-direction: column;
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 0px;
 }
-.InfoTitulos{
-    width: 15vw;
-    height: 45vh;
+
+.fotito{
+    width: 248px;
+    height: 320px;
+    object-fit: cover;
 }
