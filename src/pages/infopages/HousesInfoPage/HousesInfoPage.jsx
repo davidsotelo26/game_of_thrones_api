@@ -33,7 +33,7 @@ function HousesInfoPage ({t}) {
         <div className='volver'>
             <Link to='/houses' className='volveruwu'>
             <img className='flechita' src='https://res.cloudinary.com/dvmkyxyc0/image/upload/v1697845997/Vector_jvcokm.png' alt='flechita'></img>
-            <p>Volver</p>
+            <p>{t('volver')}</p>
             </Link>
         </div>
         <MenuIdiomas/>

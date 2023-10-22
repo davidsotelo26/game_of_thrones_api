@@ -11,13 +11,15 @@ const resources = {
             'juegotronos': 'GAME OF THRONES',
             'casas': 'HOUSES',
             'personajes': 'CHARACTERS',
-            'cronologia':'CHRONOLOGY',
+            'cronologia':'TIMELINE',
             'casa': 'HOUSE',
             'apariciones': 'EPISODES', 
             'padres': 'PARENTS', 
             'hermanos': 'SIBLINGS', 
             'titulos': 'TITLES',
-            'buscar': 'Search...'
+            'buscar': 'Search...',
+            'volver': 'Return',
+            'desconocido': "???"
         }
     },
     es: {
@@ -35,7 +37,9 @@ const resources = {
             'padres': 'PADRES', 
             'hermanos': 'HERMANOS', 
             'titulos': 'TITULOS',
-            'buscar': 'Buscar...'
+            'buscar': 'Buscar...',
+            'volver': 'Volver', 
+            'desconocido': '???'
 
         }
     },

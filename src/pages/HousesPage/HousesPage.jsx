@@ -5,7 +5,6 @@ import "./HousePage.css"
 import SearchBar from "../../components/SearchBar/SearchBar";
 import React from "react";
 import MenuInicio from "../../components/MenuInicio/MenuInicio";
-import SimpleBar from 'simplebar-react';
 import 'simplebar-react/dist/simplebar.min.css';
 import MenuIdiomas from "../../components/MenuIdiomas/MenuIdiomas";
 
