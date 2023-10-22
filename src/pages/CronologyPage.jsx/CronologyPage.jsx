@@ -5,7 +5,6 @@ import CharacterGallery from "../../components/Gallery/CharacterGallery";
 import MenuIdiomas from "../../components/MenuIdiomas/MenuIdiomas";
 import "./CronologyPage.css"
 
-
 export default function CronologyPage () {
 
 

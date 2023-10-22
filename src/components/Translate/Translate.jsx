@@ -16,7 +16,8 @@ const resources = {
             'apariciones': 'EPISODES', 
             'padres': 'PARENTS', 
             'hermanos': 'SIBLINGS', 
-            'titulos': 'TITLES'
+            'titulos': 'TITLES',
+            'buscar': 'Search...'
         }
     },
     es: {
@@ -33,7 +34,8 @@ const resources = {
             'apariciones': 'EPISODIOS', 
             'padres': 'PADRES', 
             'hermanos': 'HERMANOS', 
-            'titulos': 'TITULOS'
+            'titulos': 'TITULOS',
+            'buscar': 'Buscar...'
 
         }
     },
