@@ -77,10 +77,13 @@ h3{
 
 h4{
     font-family: 'JuegoDeTronos';
+    font-size: 1vw;
+    font-weight: lighter;
 }
 
 .houseName{
     font-size: 2.25rem;
+    font-weight: lighter;
 }
 
 .main{

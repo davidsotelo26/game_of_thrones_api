@@ -2,7 +2,6 @@ import React, { useParams } from 'react-router-dom';
 import {Link} from 'react-router-dom';
 import './HouseInfoPages.css'; 
 import { withTranslation } from 'react-i18next';
-import i18n from '../../../components/Translate/Translate';
 import MenuIdiomas from '../../../components/MenuIdiomas/MenuIdiomas';
 
 function HousesInfoPage ({t}) {
