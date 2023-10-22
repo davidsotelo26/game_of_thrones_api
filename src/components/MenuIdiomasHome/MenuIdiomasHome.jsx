@@ -1,6 +1,5 @@
 import React from "react";
 import i18n from "../Translate/Translate";
-import { Link } from "react-router-dom";
 import './MenuIdiomasHome.css';
 
 const changeLanguage = (lng) => {
