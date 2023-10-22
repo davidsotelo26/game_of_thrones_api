@@ -6,6 +6,7 @@ import MenuInicio from "../../components/MenuInicio/MenuInicio";
 import SimpleBar from 'simplebar-react';
 import 'simplebar-react/dist/simplebar.min.css';
 import SearchCharacters from "../../components/Gallery/SearchCharacters";
+import MenuIdiomas from "../../components/MenuIdiomas/MenuIdiomas";
 
 
 export default function CharactersPage () {
@@ -32,10 +33,11 @@ export default function CharactersPage () {
     return <section className="characters">
             <div className="navbar">
                 <SearchCharacters onSearch={handleSearch}/>
+                <MenuIdiomas/>
             </div>
             
        <div className="cuerpo">
-        <SimpleBar  className= 'scroll' style={{ maxheight: '200vh', width:'85vw' }}>
+        <SimpleBar  className= 'scroll' style={{ maxheight: '200vh', width:'80vw' }}>
             <div className="gallery">
                 <CharacterGallery data = {charactersFilter}/>
             </div>

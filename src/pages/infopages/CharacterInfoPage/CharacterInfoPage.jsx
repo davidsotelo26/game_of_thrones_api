@@ -43,7 +43,7 @@ return <section className="FichaPersonaje">
         <div className='volver'>
             <Link to='/characters' className='volveruwu'>
             <img className='flechita' src='https://res.cloudinary.com/dvmkyxyc0/image/upload/v1697845997/Vector_jvcokm.png' alt='flechita'></img>
-            <p>Volver</p>
+            <p>{t('volver')}</p>
             </Link>
         </div>
         <MenuIdiomas/>
@@ -52,7 +52,7 @@ return <section className="FichaPersonaje">
 <div className="descripcionGeneral">
 <div className="InfoGeneral">
     <div className="Infofoto">
-        <img height="320px" src={`http://localhost:3000/${itemData.image}`}/>
+        <img className="fotito" src={`http://localhost:3000/${itemData.image}`} alt="portrait"/>
     </div>
 
     <div className="InfoNombre">
