@@ -1,21 +1,31 @@
-import SimpleBar from "simplebar-react"
-import "./CharacterGallery.css"
-import 'simplebar-react/dist/simplebar.min.css';
+import './CharactersGallery.css';
+import {Link} from 'react-router-dom';
+import axios from 'axios';
+import { useEffect, useState } from 'react';
 
-export default function CharacterGallery ({data}) {
-    return (
-    <div className="character-gallery">
-       
-    {data.map((character, index) => (<div className="esc-name" key={index}>
-    <SimpleBar className="simplebar-react" style={{ maxHeight: 500 }}>
-    <p className="characterage">{character.age}</p>
-    
-    <p className="charactername">{character.name}</p>
-    
-    <img className="characterphoto" src={`http://localhost:3000/${character.image}`} alt="personajes"/>
-    </SimpleBar>
-    </div>
-    ))}
-</div>
-    )
+
+export default function CharacterGallery ({data}){
+    const [characters, setCharacters] = useState([]);
+
+    useEffect(()=>{
+        const getCharacters = async () => {
+            const {data} = await axios('http://localhost:3000/houses')
+            setCharacters(data);
+        }
+        getCharacters();
+    },[])
+    return(
+        <div className="all-images">
+            {data.map((item,index) => (
+                <div className='imagen-div' key={index}>
+                    <Link to={`/characters/${item.id}`}>
+                    <img className="image-character" src={`http://localhost:3000/${item.image}`} alt="images"/>
+                    </Link>
+                    <div className="names">{item.name}</div>
+                </div> 
+                
+            ))}
+        </div>
+            
+    )   
 }
