@@ -14,7 +14,7 @@ return <section className="home">
         <h1 className="hometitle">{t('juegotronos')}</h1>
     </div>
     </div>
-        <MenuInicio/> 
+    <MenuInicio/> 
 </section>
 }
 

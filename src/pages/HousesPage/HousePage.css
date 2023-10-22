@@ -54,6 +54,7 @@
     flex-wrap: wrap;
     justify-content: space-between;
     width: 90vw;
+    margin-right: 2.5vw;
 }
 .card{
     margin-bottom: 6vw;
