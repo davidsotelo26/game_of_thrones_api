@@ -51,6 +51,10 @@ p{
 }
 
 ul {
+    
+    font-size: 1vw;
+    display: flex;
+    flex-direction: column;
     display: block;
     list-style-type: disc;
     margin-block-start: 1em;

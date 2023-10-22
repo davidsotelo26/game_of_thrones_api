@@ -1,7 +1,7 @@
 import { useState } from "react";
 import React from "react"
 import './SearchBar.css'
-import { WithTranslation, withTranslation } from "react-i18next";
+import { withTranslation } from "react-i18next";
 
 function SearchBar ({onSearch, t}) {
 
