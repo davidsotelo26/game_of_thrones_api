@@ -21,7 +21,7 @@ export default function CharacterGallery ({data}){
                     <Link to={`/characters/${item.id}`}>
                     <img className="image-character" src={`http://localhost:3000/${item.image}`} alt="images"/>
                     </Link>
-                    <div className="names">{item.name}</div>
+                    <div className="hover">{item.name}</div>
                 </div> 
                 
             ))}
