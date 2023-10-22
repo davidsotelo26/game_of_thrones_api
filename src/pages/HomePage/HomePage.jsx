@@ -1,21 +1,21 @@
 import MenuInicio from "../../components/MenuInicio/MenuInicio";
 import "./homepagestyle.css";
+import { withTranslation } from 'react-i18next';
+import MenuIdiomasHome from "../../components/MenuIdiomasHome/MenuIdiomasHome";
 
-export default function HomePage () {
+function HomePage ({t}) {
 
     
 
 return <section className="home">
-    <div className="menuidiomas">
-        <img className="bandera" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Bandera_Nacional_de_Espa%C3%B1a_sin_escudo.png/1200px-Bandera_Nacional_de_Espa%C3%B1a_sin_escudo.png" alt="spainflag" />
-        <img className="bandera" src="https://www.countryflags.com/wp-content/uploads/united-kingdom-flag-png-xl.png" alt="ukflag" />
-    </div>
+    <MenuIdiomasHome/>
+    <div className="holita">
     <div className="hometitulo">
-        <h1 className="hometitulo">Juego de tronos</h1>
+        <h1 className="hometitle">{t('juegotronos')}</h1>
     </div>
-    <div className="homebotones">
-        <MenuInicio/>
     </div>
-
+    <MenuInicio/> 
 </section>
 }
+
+export default withTranslation() (HomePage);
