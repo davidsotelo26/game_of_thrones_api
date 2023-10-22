@@ -6,6 +6,8 @@ import SearchBar from "../../components/SearchBar/SearchBar";
 import React from "react";
 import MenuInicio from "../../components/MenuInicio/MenuInicio";
 // import MenuIdiomas from "../../components/MenuIdiomas copy/MenuIdiomas";
+import SimpleBar from 'simplebar-react';
+import 'simplebar-react/dist/simplebar.min.css';
 
 export default function HousesPage () {
 
