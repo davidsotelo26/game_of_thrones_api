@@ -5,7 +5,7 @@ import "./HousePage.css"
 import SearchBar from "../../components/SearchBar/SearchBar";
 import React from "react";
 import MenuInicio from "../../components/MenuInicio/MenuInicio";
-import MenuIdiomas from "../../components/MenuIdiomas copy/MenuIdiomas";
+import MenuIdiomas from "../../components/MenuIdiomas/MenuIdiomas";
 
 export default function HousesPage () {
 
