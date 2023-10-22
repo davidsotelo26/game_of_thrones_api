@@ -33,14 +33,14 @@ return (
             <SearchBar onSearch={handleSearch}/>
             <MenuIdiomas/>
         </nav>
+        <div className="cuerpo">
         <div className="scrollable-container">
             <HouseGallery data={housesFilter}/>
         </div>
-        <footer className="footer">
-            <div className="homebotones">
+        </div>
+        
                 <MenuInicio/>
-            </div>
-        </footer>
+        
     </body>
 )
 }

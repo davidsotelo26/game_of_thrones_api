@@ -11,6 +11,9 @@
 body{
     height: 100vh;
     width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .header{
@@ -88,13 +91,24 @@ h4{
 
 .main{
    width: 100vw; 
-   height: 38vh;
+   height: 48vh;
 }
 
 .footer{
-    width: 100vw;
-    height: 50vh;
+    width: 80vw;
+    height: 40vh;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+}
+
+.smallData{
+    font-size: 1vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.cositas{
+    display: flex;
+    flex-direction: column;
 }
